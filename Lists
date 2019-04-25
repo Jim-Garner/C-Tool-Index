@@ -16,7 +16,6 @@ namespace Lists
             grades3.Add(2);
 
 
-
             List<string> names = new List<string>();
             names.Add("James");
             names.Add("Dawn");
@@ -25,6 +24,20 @@ namespace Lists
             {
                 Console.WriteLine(grades3[i]);
             }
+            
+            //Also useful for creating logs;
+            
+            List <string> = transactions;
+            
+            if (customer withdraws money)
+            {
+                transactions.Add("Customer withdrew £500.");
+            }
+            if (customer deposits money)
+            {
+                transactions.Add("Customer deposited £500.");
+            }
+            
         }
     }
 }
