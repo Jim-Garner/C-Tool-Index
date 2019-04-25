@@ -1,0 +1,15 @@
+class Account
+    {
+        public string accountName;
+        public int accountNumber;
+        public decimal accountBalance;
+
+        //This is a constructor; Constructors MUST share the name of the class they're declared in;
+        
+        public Account(string accountName, int accountNumber, decimal accountBalance)
+        {
+            //We can use the word "This" to refer to the variable with the constructor signature;
+            this.accountName = accountName;
+            this.accountBalance = accountBalance;
+            this.accountNumber = accountNumber;
+        }
