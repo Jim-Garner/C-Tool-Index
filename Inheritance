@@ -1,0 +1,36 @@
+//Base Class
+
+public class Account
+    {
+        private decimal balance;
+
+        public Account(decimal balance)
+        {
+            this.balance = balance;
+        }
+
+        public void depositFunds(decimal amount)
+        {
+            balance = balance + amount;
+        }
+
+        public void withdrawFunds(decimal amount)
+        {
+            balance = balance - amount;
+        }
+
+        public decimal getBalance()
+        {
+            return balance;
+        }
+    }
+
+//Child class
+ 
+    public class ChildAccount : Account
+    {
+        public ChildAccount(decimal balance) : base(balance)
+        {
+            this.balance = balance;
+        }
+    } 
