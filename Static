@@ -1,0 +1,23 @@
+class Account
+    {
+
+        public string AccountName;
+        private int AccountNumber;
+        private decimal AccountBalance;
+
+        //As this is declared static, this is now part of the Account class;
+        //Basically, what this does is create an integer that iterates with every use. Eg: first account will be 1, next will be 2 etc;
+        static private int NextAccountNumber = 0;
+
+        public Account(string AccountName, decimal AccountBalance)
+        {
+            this.AccountName = AccountName;
+            //NextAccountNumber needs to be set here;
+            AccountNumber = NextAccountNumber;
+            this.AccountBalance = AccountBalance;
+
+            //This is how the class knows how to iterate;
+            NextAccountNumber++;
+
+        }
+     }
