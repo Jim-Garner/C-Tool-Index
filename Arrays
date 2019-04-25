@@ -1,0 +1,8 @@
+string [] arrayName = new string[10];
+
+arrayName[0] = "generic name";
+arrayName[1] - "another name";
+
+          OR
+          
+string [] arrayName = new string {"name1", "name2", "name3"};
