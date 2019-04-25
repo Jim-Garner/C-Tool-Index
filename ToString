@@ -1,0 +1,4 @@
+       public override string ToString()
+        {
+            return "Account type: " + this.GetType().Name + " ---  Current balance: £" +  balance ;
+        }
