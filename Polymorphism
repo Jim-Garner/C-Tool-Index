@@ -1,0 +1,19 @@
+static void Main(string[] args)
+        {
+            List<Account> AccountsList = new List<Account>();
+
+            for(int i = 0; i < 50; i++)
+            {
+                AccountsList.Add(new Account(50));
+                AccountsList.Add(new ChildAccount(50));
+                AccountsList.Add(new SavingsAccount(50));
+            }
+
+            //Instead of having to write the below code three times, we only have to write it once.
+            //Polymorphism enables all three Accounts to be read as account type instead of account name;
+            
+            for (int i = 0; i < AccountsList.Count; i++)
+            {
+                AccountsList[i].depositFunds(1);
+            }
+        }
