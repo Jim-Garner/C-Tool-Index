@@ -1,0 +1,9 @@
+if (condition here) 
+{
+  //run this code;
+}
+
+else 
+{
+  //run this code;
+}
