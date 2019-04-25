@@ -1,0 +1,11 @@
+public string Name
+        {
+            get //This is the Accessor;
+            {
+                return AccountName; //return whichever variable you're accessing;
+            }
+            set //This is the mutator;
+            {
+                AccountName = value; //accessed variable set equal to new value;
+            }
+        }
