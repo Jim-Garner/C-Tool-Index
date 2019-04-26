@@ -1,0 +1,20 @@
+//Writing to;
+
+
+public void writeToFile 
+{
+	StreamWriter sw = new StreamWriter("Filnename.file", true);
+	sw.WriteLine("alkdsfjal");
+	sw.Flush();
+	sw.Close();
+}
+
+
+//Reading from; - inside main code;
+
+string [] lines = File.ReadAllLines("Filename.file");
+
+for (int i = ; i < lines.Length; i++)
+{
+  string []bits = lines[i].Split(",");
+}
